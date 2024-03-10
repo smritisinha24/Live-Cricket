@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:elevation="15dp"
+
+
+    android:layout_margin="6dp"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+
+        android:layout_margin="15dp"
+
+        android:layout_height="wrap_content">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/team1_iv"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.6"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/team2_iv"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.56"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/team1_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IND"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/team1_iv"
+            app:layout_constraintStart_toStartOf="@+id/team1_iv"
+            app:layout_constraintTop_toBottomOf="@+id/team1_iv" />
+
+        <TextView
+            android:id="@+id/team2_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="ENG"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/team2_iv"
+            app:layout_constraintStart_toStartOf="@+id/team2_iv"
+            app:layout_constraintTop_toBottomOf="@+id/team2_iv" />
+
+        <TextView
+            android:id="@+id/scroe_t1_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+
+            android:text="100/45"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/team1_iv"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/over_t1_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="20 overs"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/scroe_t1_tv"
+            app:layout_constraintStart_toStartOf="@+id/scroe_t1_tv"
+            app:layout_constraintTop_toBottomOf="@+id/scroe_t1_tv" />
+
+        <TextView
+            android:id="@+id/score_t2_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+
+            android:text="100/45"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/team2_iv"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/over_t2_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:text="15 overs"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toStartOf="@+id/team2_iv"
+            app:layout_constraintStart_toStartOf="@+id/score_t2_tv"
+            app:layout_constraintTop_toBottomOf="@+id/score_t2_tv" />
+
+        <TextView
+            android:id="@+id/type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#E03A05"
+            android:text="T20"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/venue_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:marqueeRepeatLimit="1"
+            android:maxLines="1"
+            android:text="Ranchi ,India"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/team2_tv_name"
+            app:layout_constraintStart_toEndOf="@+id/team1_name"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/status_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Ind won by 5 wickets"
+            android:textColor="@color/black"
+            android:maxLines="1"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
